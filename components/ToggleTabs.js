@@ -10,7 +10,7 @@ export default function ToggleTabs({ activeTab, setActiveTab }) {
         className={`px-4 py-2 rounded-xl ${
           activeTab === "inquiry"
             ? "bg-blue-600 text-white"
-            : "bg-gray-200"
+            : "bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white"
         }`}
       >
         <h2 className="md:text-3xl  font-semibold md:p-4 p-2">Inquiry Form</h2>
@@ -21,7 +21,7 @@ export default function ToggleTabs({ activeTab, setActiveTab }) {
         className={`px-4 py-2 rounded-xl ${
           activeTab === "units"
             ? "bg-blue-600 text-white"
-            : "bg-gray-200"
+            : "bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white"
         }`}
       >
        <h2 className="md:text-3xl font-semibold md:p-4 p-2 px-8"> Units</h2>
