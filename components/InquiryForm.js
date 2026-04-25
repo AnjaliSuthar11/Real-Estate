@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function InquiryForm({ selectedRoom }) {
   const [loading, setLoading] = useState(false);
@@ -31,11 +32,11 @@ export default function InquiryForm({ selectedRoom }) {
 
     const data = await res.json();
 
-    if (data.success) {
-      alert("Inquiry Sent Successfully!");
-    } else {
-      alert("Failed to send inquiry");
-    }
+     if (data.success) {
+    toast.success("Inquiry Sent Successfully 🎉");
+  } else {
+    toast.error("Failed to send inquiry ❌");
+  }
 
     setLoading(false);
   };
